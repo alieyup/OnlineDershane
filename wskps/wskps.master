@@ -1,0 +1,360 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="wskps.master.cs" Inherits="wskps_wskps" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta name="MobileOptimized" content="320">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link href="wskomut/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/pages/portfolio.css" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/ckeditor/skins/moono/editor.css">
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-fileinput/bootstrap-fileinput.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/clockface/css/clockface.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-datetimepicker/css/datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/jquery-multi-select/css/multi-select.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-switch/css/bootstrap-switch.min.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/jquery-tags-input/jquery.tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/typeahead/typeahead.css">
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css" />
+    <link rel="stylesheet" type="text/css" href="wskomut/plugins/datatables/wskomut/plugins/bootstrap/dataTables.bootstrap.css" />
+    <!-- END PAGE LEVEL STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    <link href="wskomut/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <link href="wskomut/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="wsbicim/style-conquer.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/style.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/pages/tasks.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/pages/about-us.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/pages/blog.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/pages/pricing-tables.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/pages/profile.css" rel="stylesheet" type="text/css" />
+    <link href="wsbicim/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="wsbicim/custom.css" rel="stylesheet" type="text/css" />
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="wskomut/plugins/jquery-file-upload/blueimp-gallery/blueimp-gallery.min.css" rel="stylesheet" />
+    <link href="wskomut/plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" />
+    <link href="wskomut/plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" />
+    <script src="wskomut/scripts/form-fileupload.js"></script>
+    <title>Kontrol Paneli</title>
+
+</head>
+
+<%--<body class="page-header-fixed page-sidebar-closed">--%>
+<body id="SayfaBody" runat="server" class="page-header-fixed page-sidebar-fixed">
+    <form id="form1" runat="server">
+        <!-- BEGIN HEADER -->
+        <div class="header navbar navbar-fixed-top">
+            <!-- BEGIN TOP NAVIGATION BAR -->
+            <div class="header-inner">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="Default.aspx">
+                        <img src="wsresim/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <%-- <form class="search-form search-form-header" role="form" action="http://www.keenthemes.com/preview/conquer/index.html">
+                <div class="input-icon right">
+                    <i class="icon-magnifier"></i>
+                    <input type="text" class="form-control input-sm" name="query" placeholder="Search...">
+                </div>
+            </form>--%>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <img src="wsresim/menu-toggler.png" alt="" />
+                </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+
+                <ul class="nav navbar-nav pull-right">
+
+
+                    <!-- END NOTIFICATION DROPDOWN -->
+                    <li class="devider">&nbsp;
+                    </li>
+
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <li class="dropdown user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <img runat="server" width="30" height="30" id="profilresmi" src="wsresim/avatar3_small.jpg" />
+                            <span class="username username-hide-on-mobile">
+                                <asp:Label ID="LabelKullaniciAdi" runat="server" Text="Label"></asp:Label>
+                            </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Profilim.aspx"><i class="fa fa-user"></i>Profilim</a>
+                            </li>
+                            <li>
+                                <a href="AnaSayfa.aspx"><i class="fa fa-tasks"></i>Ana Sayfa</a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <a href="cikis.aspx"><i class="fa fa-key"></i>Çıkış</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+
+            <!-- END TOP NAVIGATION BAR -->
+        </div>
+        <!-- END HEADER -->
+        <div class="clearfix">
+        </div>
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper" id="SolMenuKilit" runat="server">
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <ul class="page-sidebar-menu">
+                        <li class="sidebar-toggler-wrapper">
+                            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                            <div class="sidebar-toggler">
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                        </li>
+                        <%--  <li class="sidebar-search-wrapper">
+                        <form class="search-form" role="form" action="http://www.keenthemes.com/preview/conquer/index.html" method="get">
+                            <div class="input-icon right">
+                                <i class="icon-magnifier"></i>
+                                <input type="text" class="form-control" name="query" placeholder="Search...">
+                            </div>
+                        </form>
+                    </li>--%>
+                        <li id="KontrolPaneli" runat="server" class="start">
+                            <a href="AnaSayfa.aspx">
+                                <i class="icon-home"></i>
+                                <span class="title">Ana Sayfa</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                         <li id="AcilirMenu" runat="server">
+                            <a href="javascript:;">
+                                <i class="fa fa-google-plus"></i>
+                                <span class="title">Açılır Menu 1</span>
+                                <span class="arrow "></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="AcilirMenu1" runat="server">
+                                    <a href="acilirmenu1.aspx">
+                                        <i class="fa fa-google-plus"></i>Açılır Menü 1</a>
+                                </li>
+                                <li id="AcilirMenu2" runat="server">
+                                    <a href="acilirmenu2.aspx">
+                                        <i class="fa fa-list-ol"></i>Açılır Menü 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li id="GoogleFormIslemleri" runat="server">
+                            <a href="javascript:;">
+                                <i class="fa fa-google-plus"></i>
+                                <span class="title">Google Form</span>
+                                <span class="arrow "></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="GoogleForm" runat="server">
+                                    <a href="GoogleForm.aspx">
+                                        <i class="fa fa-google-plus"></i>Google Form Ekle</a>
+                                </li>
+                                <li id="GoogleFormDuzenle" runat="server">
+                                    <a href="GoogleFormDuzenle.aspx">
+                                        <i class="fa fa-list-ol"></i>Google Form Düzenle</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="Kullanicilar" runat="server" class="start">
+                            <a href="Kullanicilar.aspx">
+                                <i class="fa fa-users"></i>
+                                <span class="title">Kullanıcılar</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li id="Profilim" runat="server" class="start">
+                            <a href="Profilim.aspx">
+                                <i class="fa fa-github-alt"></i>
+                                <span class="title">Profilim<span class="badge badge-important"><asp:Label ID="LabelYetki" runat="server" /></span></span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="last ">
+                            <a href="cikis.aspx">
+                                <i class="fa fa-sign-out"></i>
+                                <span class="title">Çıkış</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="footer">
+            <div class="footer-inner">
+                2015 &copy; Web Site Kontrol Panel Sistemi
+            </div>
+            <div class="footer-tools">
+                <span class="go-top">
+                    <i class="fa fa-angle-up"></i>
+                </span>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+
+    </form>
+</body>
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<script src="wskomut/plugins/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="wskomut/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="wskomut/scripts/table-managed.js"></script>
+<script src="wskomut/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery.peity.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery-knob/js/jquery.knob.js" type="text/javascript"></script>
+<script src="wskomut/plugins/flot/jquery.flot.js" type="text/javascript"></script>
+<script src="wskomut/plugins/flot/jquery.flot.resize.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+<script src="wskomut/plugins/gritter/js/jquery.gritter.js" type="text/javascript"></script>
+<!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+<script src="wskomut/plugins/fullcalendar/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="wskomut/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/jquery-validation/js/additional-methods.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/ckeditor/config.js"></script>
+<script type="text/javascript" src="wskomut/plugins/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="wskomut/plugins/ckeditor/lang/tr.js"></script>
+<script type="text/javascript" src="wskomut/plugins/ckeditor/styles.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-markdown/lib/markdown.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="wskomut/plugins/fuelux/js/spinner.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="wskomut/plugins/clockface/js/clockface.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/jquery.input-ip-address-control-1.0.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/jquery-multi-select/js/jquery.multi-select.js"></script>
+<script src="wskomut/plugins/bootstrap-pwstrength/pwstrength-bootstrap.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/jquery-tags-input/jquery.tagsinput.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-markdown/js/bootstrap-markdown.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-markdown/lib/markdown.js" type="text/javascript"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script type="text/javascript" src="wskomut/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script src="wskomut/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script>
+<script src="wskomut/plugins/typeahead/handlebars.min.js" type="text/javascript"></script>
+<script src="wskomut/plugins/typeahead/typeahead.bundle.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="wskomut/plugins/jquery-mixitup/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="wskomut/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="wskomut/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script>
+<script src="wskomut/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="wskomut/scripts/app.js" type="text/javascript"></script>
+<script src="wskomut/scripts/form-validation.js"></script>
+<script src="wskomut/scripts/form-components.js"></script>
+<script src="wskomut/scripts/index.js" type="text/javascript"></script>
+<script src="wskomut/scripts/tasks.js" type="text/javascript"></script>
+<script src="wskomut/scripts/portfolio.js"></script>
+<script src="wskomut/scripts/ui-extended-modals.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- END JAVASCRIPTS -->
+
+<script>
+    jQuery(document).ready(function () {
+        App.init(); // initlayout and core plugins
+        FormComponents.init();
+        UIExtendedModals.init();
+        FormValidation.init();
+        Index.init();
+        Index.initJQVMAP(); // init index page's custom scripts
+        Index.initCalendar(); // init index page's custom scripts
+        Index.initCharts(); // init index page's custom scripts
+        Index.initChat();
+        Index.initMiniCharts();
+        Index.initPeityElements();
+        Index.initKnowElements();
+        Index.initDashboardDaterange();
+        Tasks.initDashboardWidget();
+        Portfolio.init();
+        TableManaged.init();
+    });
+</script>
+<!-- END JAVASCRIPTS -->
+
+</html>
