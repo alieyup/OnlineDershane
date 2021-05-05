@@ -21,15 +21,14 @@ public partial class wskps_wskps : System.Web.UI.MasterPage
             SqlDataReader oku = com.ExecuteReader();
             if (oku.Read())
             {
-                LabelKullaniciAdi.Text = oku["KullaniciAdiSoyadi"].ToString();
+                LabelKullaniciAdi.Text = oku["KullaniciAdi"].ToString() + " " + oku["KullaniciSoyadi"].ToString();
                 profilresmi.Src = oku["KullaniciResim"].ToString();
-                profilresmi.Alt = oku["KullaniciAdiSoyadi"].ToString();
+                profilresmi.Alt = oku["KullaniciAdi"].ToString() + " " + oku["KullaniciSoyadi"].ToString();
             }
             //1 yani admin ise üye ekranları gizleniyor.
             if (Session["KullaniciYetki"].ToString() == "1")
             {
                 LabelYetki.Text = "Admin";
-
             }
             
             //2 yani üye (gold) ise admin ekranları gizleniyor.
@@ -45,6 +44,17 @@ public partial class wskps_wskps : System.Web.UI.MasterPage
                 Kullanicilar.Attributes["style"] = "display:none;";
                 AcilirMenu.Attributes["style"] = "display:none;";
                 LabelYetki.Text = "Standart Üye";
+            }
+            //4 yani üye (editör) 
+            if (Session["KullaniciYetki"].ToString() == "4")
+            {
+                Kullanicilar.Attributes["style"] = "display:none;";
+                AcilirMenu.Attributes["style"] = "display:none;";
+                LabelYetki.Text = "Editör Üye";
+            }
+            else
+            {
+
             }
             oku.Dispose();
             com.Dispose();

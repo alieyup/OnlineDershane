@@ -27,7 +27,9 @@ public partial class wskps_Wskps : System.Web.UI.Page
 
     protected void ButtonGiris_Click(object sender, EventArgs e)
     {
-        SqlCommand com = new SqlCommand("SELECT KullaniciID, KullaniciEmail, KullaniciSifre,YetkiID FROM Kullanicilar WHERE KullaniciEmail=@user AND KullaniciSifre=@pass", con);
+        //SqlCommand com = new SqlCommand("SELECT KullaniciID, KullaniciEmail, KullaniciSifre,YetkiID FROM Kullanicilar WHERE KullaniciEmail=@user AND KullaniciSifre=@pass", con);
+        SqlCommand com = new SqlCommand("SELECT Kullanicilar.*, Yetkiler.* FROM Kullanicilar INNER JOIN Yetkiler ON Kullanicilar.KullaniciYetkiID = Yetkiler.YetkiID WHERE  KullaniciEmail = @user AND KullaniciSifre = @pass", con);
+
         com.Parameters.AddWithValue("@user", username.Value);
         com.Parameters.AddWithValue("@pass", password.Text);
         if (con.State == ConnectionState.Closed) con.Open();
